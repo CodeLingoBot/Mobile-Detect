@@ -78,7 +78,7 @@ function initLayoutType()
 
         $layoutType = $_GET['layoutType'];
 
-    } else {
+    } else{
 
         if (empty($_SESSION['layoutType'])) {
 

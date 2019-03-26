@@ -849,7 +849,7 @@ class Mobile_Detect
 
         if (false === empty($userAgent)) {
             return $this->userAgent = $this->prepareUserAgent($userAgent);
-        } else {
+        } else{
             $this->userAgent = null;
             foreach ($this->getUaHttpHeaders() as $altHeader) {
                 if (false === empty($this->httpHeaders[$altHeader])) { // @todo: should use getHttpHeader(), but it would be slow. (Serban)
